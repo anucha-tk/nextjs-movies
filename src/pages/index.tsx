@@ -22,7 +22,7 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main className='layout'>
+      <main className='grid'>
         <Hero />
       </main>
     </Layout>

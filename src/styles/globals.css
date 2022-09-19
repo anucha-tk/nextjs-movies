@@ -90,6 +90,12 @@
   .min-h-main {
     @apply min-h-[calc(100vh-56px)];
   }
+  .buttonOutlined {
+    @apply rounded-full border border-orange-500 px-3 py-2 text-xs font-semibold text-orange-500 hover:text-orange-700 md:border-2 md:text-base;
+  }
+  .buttonContained {
+    @apply rounded-full bg-orange-500 px-6 py-2 text-xs font-semibold text-white hover:bg-orange-700 md:text-base;
+  }
 }
 
 @layer utilities {

@@ -18,15 +18,13 @@ const links: Links = [
     href: '/',
     label: 'Sign in',
     type: 'button',
-    buttonStyle:
-      'rounded-full border-2 border-orange-500 px-3 py-2 font-semibold text-dark',
+    buttonStyle: 'buttonOutlined',
   },
   {
     href: '/',
     type: 'button',
     label: 'Go Premium',
-    buttonStyle:
-      'rounded-full bg-orange-500 px-6 py-2 font-semibold text-white',
+    buttonStyle: 'buttonContained',
   },
 ];
 
@@ -45,7 +43,7 @@ export default function Header() {
             <UnstyledLink
               key={href}
               href={href}
-              className='hover:text-gray-600'
+              className='hover:text-gray-600 '
             >
               {label}
             </UnstyledLink>
@@ -60,11 +58,14 @@ export default function Header() {
   );
 
   return (
-    <header className='sticky top-0 z-50 mt-4 bg-white'>
+    <header className='sticky top-0 z-50 mt-2'>
       <div className='layout flex h-14 items-center justify-between'>
         <div className='flex h-full items-center space-x-2'>
           <BiMoviePlay className='h-8 w-8 cursor-pointer fill-orange-500 md:h-12 md:w-12' />
-          <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
+          <UnstyledLink
+            href='/'
+            className='font-bold text-white hover:text-gray-300'
+          >
             Movies
           </UnstyledLink>
         </div>
