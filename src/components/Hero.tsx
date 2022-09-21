@@ -13,7 +13,7 @@ const Hero = () => {
           <p className='max-w-xs text-center text-dimWhite md:max-w-none md:text-lg lg:text-xl'>
             Millions of movies, TV shows and people to discover. Explore now.
           </p>
-          <div className='flex space-x-4'>
+          <div className='grid grid-cols-2 gap-3'>
             <button className='buttonOutlined'>Learn More</button>
             <button className='buttonContained'>Go Premium</button>
           </div>

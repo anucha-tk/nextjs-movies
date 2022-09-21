@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Description from '@/components/Description';
 import Explore from '@/components/Explore';
 import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
@@ -23,11 +24,12 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main className='grid'>
+      <main className='grid grid-flow-row gap-6'>
         <Hero />
-        <div className='layout -mt-16'>
+        <div className='layout -mt-16 grid grid-flow-row gap-6'>
           <Explore />
         </div>
+        <Description />
       </main>
     </Layout>
   );
