@@ -18,13 +18,13 @@ const links: Links = [
     href: '/',
     label: 'Sign in',
     type: 'button',
-    buttonStyle: 'buttonOutlined',
+    buttonStyle: 'buttonOutlined w-full',
   },
   {
     href: '/',
     type: 'button',
     label: 'Go Premium',
-    buttonStyle: 'buttonContained',
+    buttonStyle: 'buttonContained w-full',
   },
 ];
 
@@ -38,27 +38,21 @@ export default function Header() {
   const navLinks = (
     <>
       {links.map(({ href, label, type, buttonStyle: style }) => (
-        <>
+        <div key={label}>
           {type === 'a' ? (
-            <UnstyledLink
-              key={href}
-              href={href}
-              className='hover:text-gray-600 '
-            >
+            <UnstyledLink href={href} className='hover:text-gray-600 '>
               {label}
             </UnstyledLink>
           ) : (
-            <button key={href} className={style}>
-              {label}
-            </button>
+            <button className={style}>{label}</button>
           )}
-        </>
+        </div>
       ))}
     </>
   );
 
   return (
-    <header className='sticky top-0 z-50 mt-2'>
+    <header className='sticky top-0 z-50 backdrop-blur-md'>
       <div className='layout flex h-14 items-center justify-between'>
         <div className='flex h-full items-center space-x-2'>
           <BiMoviePlay className='h-8 w-8 cursor-pointer fill-orange-500 md:h-12 md:w-12' />

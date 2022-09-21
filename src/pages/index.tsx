@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Explore from '@/components/Explore';
 import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
@@ -24,6 +25,9 @@ export default function HomePage() {
 
       <main className='grid'>
         <Hero />
+        <div className='layout -mt-16'>
+          <Explore />
+        </div>
       </main>
     </Layout>
   );
