@@ -4,6 +4,7 @@ import Description from '@/components/Description';
 import Explore from '@/components/Explore';
 import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
+import Plan from '@/components/Plan';
 import Seo from '@/components/Seo';
 
 /**
@@ -14,7 +15,7 @@ import Seo from '@/components/Seo';
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
 
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
+// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT +   s
 // Before you begin editing, follow all comments with `STARTERCONF`,
 // to customize the default configuration.
 
@@ -30,6 +31,7 @@ export default function HomePage() {
           <Explore />
         </div>
         <Description />
+        <Plan />
       </main>
     </Layout>
   );
