@@ -39,8 +39,8 @@ function Plan() {
     },
   ];
   return (
-    <div className='-mt-[1.5rem] bg-[#141414]'>
-      <section className='layout grid grid-flow-row gap-3 pt-10 md:gap-6'>
+    <div className='-mt-[1.5rem] bg-[#141414] py-10'>
+      <section className='layout grid grid-flow-row gap-3 md:gap-6'>
         <article className='grid grid-flow-row items-center justify-items-center gap-3'>
           <h2 className='text-white md:text-4xl lg:text-5xl'>
             Start your free Trial

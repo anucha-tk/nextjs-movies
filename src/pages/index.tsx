@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Description from '@/components/Description';
 import Explore from '@/components/Explore';
+import FAQ from '@/components/FAQ';
 import Hero from '@/components/Hero';
 import Layout from '@/components/layout/Layout';
 import Plan from '@/components/Plan';
@@ -32,6 +33,7 @@ export default function HomePage() {
         </div>
         <Description />
         <Plan />
+        <FAQ />
       </main>
     </Layout>
   );
