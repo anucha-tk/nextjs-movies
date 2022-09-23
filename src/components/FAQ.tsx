@@ -32,7 +32,7 @@ const Faq = () => {
     },
   ];
   return (
-    <div className='-mt-[1.5rem] bg-[#1D1D1D]'>
+    <div className='-mt-[1.5rem] bg-[#1D1D1D] pb-10'>
       <section className='layout grid grid-flow-row justify-center gap-3 pt-10'>
         <article className='grid grid-flow-row justify-items-center gap-3'>
           <h3 className='text-white'>Frequently asked questions</h3>
